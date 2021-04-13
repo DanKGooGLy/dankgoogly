@@ -71,12 +71,11 @@ nav a:hover {
     text-decoration: underline;
 }
 /*IDs and Classes*/
-#hpage {
-    text-align: center;
-}
-#apage,
-#mpage {
+#apage {
     display: none;
+}
+#title {
+    text-align: center;
 }
 .wave span {
     animation: wave 2s infinite;
@@ -114,16 +113,5 @@ nav a:hover {
     }
     100% {
         transform: translateY(0px);
-    }
-}
-/*Rules*/
-@media only screen and (max-width: 750) {
-    nav,
-    #apage,
-    #hpage {
-        display: none;
-    }
-    #mpage {
-        display: block;
     }
 }
