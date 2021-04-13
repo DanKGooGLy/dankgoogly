@@ -2,7 +2,7 @@
     font-family: jb;
     font-style: normal;
     font-weight: normal;
-    font-display: auto; /* or block, swap, fallback, optional */
+    font-display: auto;
     src: local("jb"), url("./jb.woff2") format("woff2");
 }
 *,
@@ -28,14 +28,18 @@
     color: var(--foreground);
 }
 html {
+    -webkit-font-smoothing: antialiased;
+    background-color: var(--background);
     box-sizing: border-box;
+    color: var(--white);
     justify-content: center;
+    overflow-x: initial;
 }
 body {
-    color: var(--white);
-    background-color: var(--background);
+    background: inherit;
     font-family: jb, monospace;
     font-size: medium;
+    overflow-x: hidden;
 }
 a {
     color: var(--yellow);
@@ -50,15 +54,15 @@ h4,
 h5,
 h6,
 p {
+    letter-spacing: 1.05px;
     margin: auto;
     max-width: 1000px;
-    letter-spacing: 1.05px;
 }
 nav {
     font-size: large;
+    overflow: hidden;
     text-align: center;
     width: 100%;
-    overflow: hidden;
 }
 nav a {
     text-decoration: none;
@@ -75,9 +79,9 @@ nav a:hover {
     display: none;
 }
 .wave span {
-    display: table-cell;
-    color: var(--blue);
     animation: wave 2s infinite;
+    color: var(--blue);
+    display: table-cell;
 }
 .wave span:nth-child(2) {
     animation-delay: -0.2s;
