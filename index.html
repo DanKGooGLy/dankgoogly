@@ -9,9 +9,8 @@
         <link rel="icon" href="./avatar.webp" type="image/x-icon">
 
         <!--Fuck you-->
-        <link rel="preload" href="./index.js" as="script">
-        <link rel="preload" href="./index.css" as="style">
-        <link rel="stylesheet" href="./index.css">
+        <link rel="preload" href="./main.css" as="style">
+        <link rel="stylesheet" href="./main.css">
     </head>
     <body>
         <nav>
@@ -67,6 +66,23 @@
             </p>
         </div>
 
-        <script src="./index.js" defer></script>
+        <script defer>
+const hlink = document.querySelector("#hlink");
+const alink = document.querySelector("#alink");
+function show(shown, hidden) {
+    document.getElementById(shown).style.display = "block";
+    document.getElementById(hidden).style.display = "none";
+    return false;
+}
+hlink.addEventListener("click", function onclick(event) {
+    event.preventDefault();
+    return show("hpage", "apage");
+});
+alink.addEventListener("click", function onclick(event) {
+    event.preventDefault();
+    return show("apage", "hpage");
+});
+
+        </script>
     </body>
 </html>
