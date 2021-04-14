@@ -1,16 +1,34 @@
 <!doctype html>
 <html lang="en">
     <head>
-        <meta charset="utf-8">
+        <!-- Meta Tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="DanKGooGLy's portfolio">
-        <title>DanK's website</title>
-        <link rel="icon" href="./avatar.webp" type="image/x-icon">
+		<meta name="theme-color" content="#1e2127"> 
 
-        <!--Fuck you-->
-        <link rel="preload" href="./main.css" as="style">
-        <link rel="stylesheet" href="./main.css">
+		<!-- OpenGraph -->
+		<meta property="og:title" content="DanK's site>
+		<meta property="og:site_name" content="DanK's site">
+		<meta property="og:type" content="website">
+		<meta property="og:image" content="avatar.webp">
+		<meta property="og:description" content="Professional Cat Beater for hire! Get my services today for the low low price of $200 CAD.">
+
+		<!-- Favicon -->
+		<link rel="shortcut icon" type="image/x-icon" href="avatar.webp">
+
+        <title>DanK's website</title>
+
+        <!--Stylesheets-->
+        <link rel="preload" href="css/p-main.css" as="style">
+		<link rel="preload" href="css/p-animations.css" as="style">
+        
+        <link rel="stylesheet" type="text/css" href="css/s-sanitize.css">
+        <link rel="stylesheet" type="text/css" href="css/s-forms.css">
+        <link rel="stylesheet" type="text/css" href="css/s-assets.css">
+        <link rel="stylesheet" type="text/css" href="css/s-motion.css">
+        <link rel="stylesheet" type="text/css" href="css/p-main.css">
+        <link rel="stylesheet" type="text/css" href="css/p-animations.css">
     </head>
     <body>
         <nav>
@@ -65,24 +83,8 @@
                 </h4>
             </p>
         </div>
-
-        <script defer>
-const hlink = document.querySelector("#hlink");
-const alink = document.querySelector("#alink");
-function show(shown, hidden) {
-    document.getElementById(shown).style.display = "block";
-    document.getElementById(hidden).style.display = "none";
-    return false;
-}
-hlink.addEventListener("click", function onclick(event) {
-    event.preventDefault();
-    return show("hpage", "apage");
-});
-alink.addEventListener("click", function onclick(event) {
-    event.preventDefault();
-    return show("apage", "hpage");
-});
-
-        </script>
+        
+        <!--Javascript-->
+        <script type="text/javascript" src="js/a-nav.js" defer></script>
     </body>
 </html>

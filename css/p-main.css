@@ -87,15 +87,3 @@ nav a:hover {
 .wave span:nth-child(8) {
     animation-delay: -1.4s;
 }
-/*Animations*/
-@keyframes wave {
-    0% {
-        transform: translateY(0px);
-    }
-    50% {
-        transform: translateY(7.5px);
-    }
-    100% {
-        transform: translateY(0px);
-    }
-}
