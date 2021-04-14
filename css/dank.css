@@ -1,0 +1,101 @@
+@font-face {
+    font-family: jb;
+    font-style: normal;
+    font-weight: normal;
+    font-display: auto;
+    src: local("jb"), url("../jb.woff2") format("woff2");
+}
+:root {
+    --background: #1e2127;
+    --blue: #61afef;
+    --black: #5c6370;
+    --cyan: #56b6c2;
+    --foreground: #5c6370;
+    --green: #98c379;
+    --purple: #c678dd;
+    --red: #e06c75;
+    --white: #abb2bf;
+    --yellow: #d19a66;
+}
+::selection {
+    color: var(--foreground);
+}
+body {
+    background: var(--background);
+    color: var(--white);
+    font-family: jb, monospace;
+}
+a {
+    color: var(--yellow);
+}
+a:hover {
+    color: var(--purple);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    letter-spacing: 1.05px;
+    margin: auto;
+    max-width: 1000px;
+}
+nav {
+    font-size: large;
+    overflow: hidden;
+    text-align: center;
+    width: 100%;
+}
+nav a {
+    text-decoration: none;
+}
+nav a:hover {
+    text-decoration: underline;
+}
+/*IDs and Classes*/
+#apage {
+    display: none;
+}
+#title {
+    text-align: center;
+}
+.wave span {
+    animation: wave 2s infinite;
+    color: var(--blue);
+    display: table-cell;
+}
+.wave span:nth-child(2) {
+    animation-delay: -0.2s;
+}
+.wave span:nth-child(3) {
+    animation-delay: -0.4s;
+}
+.wave span:nth-child(4) {
+    animation-delay: -0.6s;
+}
+.wave span:nth-child(5) {
+    animation-delay: -0.8s;
+}
+.wave span:nth-child(6) {
+    animation-delay: -1s;
+}
+.wave span:nth-child(7) {
+    animation-delay: -1.2s;
+}
+.wave span:nth-child(8) {
+    animation-delay: -1.4s;
+}
+/*Animations*/
+@keyframes wave {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(7.5px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
