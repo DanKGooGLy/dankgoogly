@@ -1,16 +1,16 @@
+/*Sanitization*/
+@import "./css/assets.css";
+@import "./css/forms.css";
+@import "./css/reduce-motion.css";
+@import "./css/sanitize.css";
+@import "./css/typography.css";
+/*Main*/
 @font-face {
     font-family: jb;
     font-style: normal;
     font-weight: normal;
     font-display: auto;
     src: local("jb"), url("./jb.woff2") format("woff2");
-}
-*,
-*:before,
-*:after {
-    box-sizing: inherit;
-    margin: 5px;
-    padding: 0;
 }
 :root {
     --background: #1e2127;
@@ -27,19 +27,10 @@
 ::selection {
     color: var(--foreground);
 }
-html {
-    -webkit-font-smoothing: antialiased;
-    background-color: var(--background);
-    box-sizing: border-box;
-    color: var(--white);
-    justify-content: center;
-    overflow-x: initial;
-}
 body {
-    background: inherit;
+    background: var(--background);
+    color: var(--white);
     font-family: jb, monospace;
-    font-size: medium;
-    overflow-x: hidden;
 }
 a {
     color: var(--yellow);
