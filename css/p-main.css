@@ -6,22 +6,21 @@
     src: local("jb"), url("../jb.woff2") format("woff2");
 }
 :root {
-    --background: #1e2127;
-    --blue: #61afef;
-    --black: #5c6370;
-    --cyan: #56b6c2;
-    --foreground: #5c6370;
-    --green: #98c379;
-    --purple: #c678dd;
-    --red: #e06c75;
-    --white: #abb2bf;
-    --yellow: #d19a66;
+    --blue: #95d5e5;
+    --black: #282c34;
+    --cyan: #48d1cc;
+    --brown: #70695c;
+    --green: #77dd77;
+    --purple: #bf7df2;
+    --red: #ff6961;
+    --white: #e6e8ec;
+    --yellow: #e8c94e;
 }
 ::selection {
-    color: var(--foreground);
+    color: var(--brown);
 }
 body {
-    background: var(--background);
+    background: var(--black);
     color: var(--white);
     font-family: jb, monospace;
 }
@@ -63,7 +62,7 @@ nav a:hover {
 }
 .wave span {
     animation: wave 2s infinite;
-    color: var(--blue);
+    color: var(--cyan);
     display: table-cell;
 }
 .wave span:nth-child(2) {
