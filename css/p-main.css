@@ -3,24 +3,31 @@
     font-style: normal;
     font-weight: normal;
     font-display: auto;
-    src: local("jb"), url("../jb.woff2") format("woff2");
+    src: local("jb"), url("../fonts/jb.woff2") format("woff2");
+}
+html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
 }
 :root {
-    --blue: #95d5e5;
-    --black: #282c34;
-    --cyan: #48d1cc;
-    --brown: #70695c;
-    --green: #77dd77;
-    --purple: #bf7df2;
-    --red: #ff6961;
-    --white: #e6e8ec;
-    --yellow: #e8c94e;
+    --background: #1e2127;
+    --blue: #61afef;
+    --black: #5c6370;
+    --cyan: #56b6c2;
+    --foreground: #5c6370;
+    --green: #98c379;
+    --purple: #c678dd;
+    --red: #e06c75;
+    --white: #abb2bf;
+    --yellow: #d19a66;
 }
 ::selection {
-    color: var(--brown);
+    color: var(--foreground);
 }
 body {
-    background: var(--black);
+    background: var(--background);
     color: var(--white);
     font-family: jb, monospace;
 }
@@ -30,9 +37,6 @@ a {
 a:hover {
     color: var(--purple);
 }
-li {
-    margin: 12px
-}
 h1,
 h2,
 h3,
@@ -40,7 +44,7 @@ h4,
 h5,
 h6,
 p {
-    letter-spacing: 1.05px;
+    letter-spacing: 1.1px;
     margin: auto;
     max-width: 1000px;
 }
@@ -65,7 +69,7 @@ nav a:hover {
 }
 .wave span {
     animation: wave 2s infinite;
-    color: var(--cyan);
+    color: var(--blue);
     display: table-cell;
 }
 .wave span:nth-child(2) {
