@@ -1,50 +1,90 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
     <head>
         <!-- Favicon -->
-        <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
-        <link rel="manifest" href="/assets/site.webmanifest">
-        <link rel="mask-icon" href="/assets/safari-pinned-tab.svg" color="#1e2127">
-        <link rel="shortcut icon" href="/assets/favicon.ico">
-        
-        <!-- Meta Tags -->
-        <meta name="msapplication-TileColor" content="#1e2127">
-        <meta name="msapplication-TileImage" content="/imgs/mstile-144x144.png">
-        <meta name="msapplication-config" content="/assets/browserconfig.xml">
-		<meta name="theme-color" content="#282c34"> 
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="description" content="Hello there.">
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="/assets/apple-touch-icon.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="/assets/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="/assets/favicon-16x16.png"
+        />
+        <link rel="manifest" href="/assets/site.webmanifest" />
+        <link
+            rel="mask-icon"
+            href="/assets/safari-pinned-tab.svg"
+            color="#1e2127"
+        />
+        <link rel="shortcut icon" href="/assets/favicon.ico" />
 
-		<!-- OpenGraph -->
-		<meta property="og:title" content="DanK's site">
-		<meta property="og:site_name" content="DanK's site">
-		<meta property="og:type" content="website">
-		<meta property="og:image" content="avatar.webp">
-		<meta property="og:description" content="Professional Cat Beater for hire! Get my services today for the low low price of $200 CAD.">
+        <!-- Meta Tags -->
+        <meta charset="utf-8" />
+        <meta name="msapplication-TileColor" content="#1e2127" />
+        <meta
+            name="msapplication-TileImage"
+            content="/imgs/mstile-144x144.png"
+        />
+        <meta name="msapplication-config" content="/assets/browserconfig.xml" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="Hello there." />
+        <meta name="theme-color" content="#282c34" />
+
+        <!-- OpenGraph -->
+        <meta property="og:title" content="DanK's site" />
+        <meta property="og:site_name" content="DanK's site" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="avatar.webp" />
+        <meta
+            property="og:description"
+            content="Professional Cat Beater for hire! Get my services today for the low low price of $200 CAD."
+        />
 
         <title>DanK's website</title>
 
         <!-- Stylesheets -->
-        <link rel="preload" href="css/p-main.css" as="style">
-		<link rel="preload" href="css/p-animations.css" as="style">
-        
-        <link rel="stylesheet" type="text/css" href="css/s-sanitize.css">
-        <link rel="stylesheet" type="text/css" href="css/s-forms.css">
-        <link rel="stylesheet" type="text/css" href="css/s-assets.css">
-        <link rel="stylesheet" type="text/css" href="css/s-motion.css">
-        <link rel="stylesheet" type="text/css" href="css/p-main.css">
-        <link rel="stylesheet" type="text/css" href="css/p-animations.css">
+        <link rel="preload" href="css/main.css" as="style" />
+        <link rel="preload" href="css/preload.css" as="style" />
+
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="https://unpkg.com/sanitize.css"
+        />
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="https://unpkg.com/sanitize.css/forms.css"
+        />
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="https://unpkg.com/sanitize.css/assets.css"
+        />
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="https://unpkg.com/sanitize.css/reduce-motion.css"
+        />
+        <link rel="stylesheet" type="text/css" href="css/main.css" />
+        <link rel="stylesheet" type="text/css" href="css/preload.css" />
     </head>
     <body>
         <nav>
             <a href="#" id="hlink">[ Home ]</a>
             <a href="#" id="alink">[ About ]</a>
         </nav>
-        <div id="hpage">
+        <section id="hpage">
             <h1 id="title">
                 You are now in a<span class="wave">
                     <span>c</span>
@@ -57,10 +97,14 @@
                     <span>e</span>
                 </span>
             </h1>
-            <noscript><h3>If you see this then you should enable JS</h3></noscript>
-        </div>
-        <div id="apage">
-            <h1>About Me</h1>
+            <noscript
+                ><h3>If you see this then you should enable JS</h3></noscript
+            >
+        </section>
+        <section id="apage">
+            <header>
+                <h1>About Me</h1>
+            </header>
             <p>
                 I'm <a href="https://github.com/DanKGooGLy/DanKGooGLy">DanK</a>.
                 I'm a Canadian developer working on many small projects, such as
@@ -83,17 +127,13 @@
                 <a href="//genericlinux.org/">Generic Linux</a>, which is a
                 distribution of Linux that's meant to comply with practically
                 all UNIX standards whilst being ironically generic.<br />
-                <br />
-                <h4>
-                    For further questions or anything else, you can contact me at
-                    <a href="mailto:dank@genericlinux.org"
-                        >dank@genericlinux.org</a
-                    >
-                </h4>
+                <br />For further questions or anything else, you can contact me
+                at
+                <a href="mailto:dank@genericlinux.org">dank@genericlinux.org</a>
             </p>
-        </div>
-        
+        </section>
+
         <!--Javascript-->
-        <script type="text/javascript" src="js/a-nav.js" defer></script>
+        <script type="text/javascript" src="js/nav.js" defer></script>
     </body>
 </html>

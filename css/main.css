@@ -1,41 +1,23 @@
-@font-face {
-    font-family: jb;
-    font-style: normal;
-    font-weight: normal;
-    font-display: auto;
-    src: local("jb"), url("../fonts/jb.woff2") format("woff2");
-}
+@import url("https://cdn.jsdelivr.net/npm/@xz/fonts@1/serve/jetbrains-mono.min.css");
 html {
     height: 100%;
     margin: 0;
     padding: 0;
     width: 100%;
 }
-:root {
-    --background: #1e2127;
-    --blue: #61afef;
-    --black: #5c6370;
-    --cyan: #56b6c2;
-    --foreground: #5c6370;
-    --green: #98c379;
-    --purple: #c678dd;
-    --red: #e06c75;
-    --white: #abb2bf;
-    --yellow: #d19a66;
-}
 ::selection {
-    color: var(--foreground);
+    color: #5c6370;
 }
 body {
-    background: var(--background);
-    color: var(--white);
-    font-family: jb, monospace;
+    background: #1e2127;
+    color: #abb2bf;
+    font-family: "JetBrains Mono", monospace;
 }
 a {
-    color: var(--yellow);
+    color: #d19a66;
 }
 a:hover {
-    color: var(--purple);
+    color: #c678dd;
 }
 h1,
 h2,
@@ -69,7 +51,7 @@ nav a:hover {
 }
 .wave span {
     animation: wave 2s infinite;
-    color: var(--blue);
+    color: #61afef;
     display: table-cell;
 }
 .wave span:nth-child(2) {
