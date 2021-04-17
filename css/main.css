@@ -2,7 +2,7 @@
     font-family: jb;
     font-style: normal;
     font-weight: normal;
-    font-display: auto;
+    font-display: swap;
     src: local("jb"), url("../fonts/jb.woff2") format("woff2");
 }
 html {
