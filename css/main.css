@@ -1,9 +1,10 @@
 @font-face {
-    font-family: jb;
+    font-family: "JetBrains Mono";
     font-style: normal;
-    font-weight: normal;
-    font-display: auto;
-    src: local("jb"), url("../fonts/jb.woff2") format("woff2");
+    font-weight: 400;
+    src: local("JetBrains Mono Regular"), local("JetBrainsMono-Regular"),
+        url("../fonts/JetBrainsMono.woff2") format("woff2");
+    font-display: swap;
 }
 html {
     height: 100%;
@@ -17,7 +18,7 @@ html {
 body {
     background: #1e2127;
     color: #abb2bf;
-    font-family: jb, monospace;
+    font-family: "JetBrains Mono", monospace;
 }
 a {
     color: #d19a66;
