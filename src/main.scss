@@ -1,0 +1,74 @@
+$black: #1e2127;
+$yellow: #d19a66;
+$blue: #61afef;
+$grey: #5c6370;
+$white: #abb2bf;
+html {
+    font-family: "JetBrains Mono", monospace;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+body {
+    background: $black;
+    color: $white;
+    font-family: "JetBrains Mono", monospace;
+    font-size: large;
+}
+::selection {
+    color: $grey;
+}
+a {
+    color: $yellow;
+}
+h1,
+h3,
+p {
+    margin: auto;
+    max-width: 1000px;
+}
+nav {
+    font-size: large;
+    overflow: hidden;
+    text-align: center;
+    width: 100%;
+    a {
+        text-decoration: none;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+#apage {
+    display: none;
+}
+#title {
+    padding-top: 10px;
+    text-align: center;
+}
+@mixin animation-delay {
+    @for $i from 1 through 8 {
+        &:nth-child(#{$i}) {
+            animation-delay: #{$i * -0.2}s;
+        }
+    }
+}
+.wave span {
+    animation: wave 2s infinite;
+    color: $blue;
+    display: table-cell;
+    $animation-delay: (-0.2s, -0.4s, -0.6s, -0.8s, -1s, -1.2s -1.4s);
+    @include animation-delay();
+}
+@keyframes wave {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(7.5px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
