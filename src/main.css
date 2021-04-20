@@ -9,7 +9,7 @@ body {
     background: #1e2127;
     color: #abb2bf;
     font-family: monospace;
-    font-size: larger;
+    font-size: large;
 }
 a {
     color: #d19a66;
@@ -39,6 +39,7 @@ nav a:hover {
     display: none;
 }
 #title {
+    padding-top: 10px;
     text-align: center;
 }
 .wave span {
