@@ -1,0 +1,80 @@
+html {
+    font-family: "JetBrains Mono", monospace;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+body {
+    background: #1e2127;
+    color: #abb2bf;
+    font-family: monospace;
+    font-size: larger;
+}
+a {
+    color: #d19a66;
+}
+h1,
+h3,
+p {
+    margin: auto;
+    max-width: 1000px;
+}
+nav {
+    font-size: large;
+    overflow: hidden;
+    text-align: center;
+    width: 100%;
+}
+nav a {
+    text-decoration: none;
+}
+nav a {
+    text-decoration: none;
+}
+nav a:hover {
+    text-decoration: underline;
+}
+#apage {
+    display: none;
+}
+#title {
+    text-align: center;
+}
+.wave span {
+    animation: wave 2s infinite;
+    color: #61afef;
+    display: table-cell;
+}
+.wave span:nth-child(2) {
+    animation-delay: -0.2s;
+}
+.wave span:nth-child(3) {
+    animation-delay: -0.4s;
+}
+.wave span:nth-child(4) {
+    animation-delay: -0.6s;
+}
+.wave span:nth-child(5) {
+    animation-delay: -0.8s;
+}
+.wave span:nth-child(6) {
+    animation-delay: -1s;
+}
+.wave span:nth-child(7) {
+    animation-delay: -1.2s;
+}
+.wave span:nth-child(8) {
+    animation-delay: -1.4s;
+}
+@keyframes wave {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(7.5px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
