@@ -3,7 +3,7 @@
   font-style: normal;
   font-weight: normal;
   font-display: auto;
-  src: local("jb"), url("/src/jb.woff2") format("woff2");
+  src: local("jb"), url("/src/fonts/jb.woff2") format("woff2");
 }
 @keyframes wave {
   0% {
