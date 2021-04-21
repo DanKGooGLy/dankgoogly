@@ -3,6 +3,24 @@ $yellow: #d19a66;
 $blue: #61afef;
 $grey: #5c6370;
 $white: #abb2bf;
+@font-face {
+    font-family: "JetBrains Mono";
+    font-style: normal;
+    font-weight: normal;
+    font-display: auto;
+    src: local("jb"), url("/src/jb.woff2") format("woff2");
+}
+@keyframes wave {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(7.5px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
 html {
     font-family: "JetBrains Mono", monospace;
     height: 100%;
@@ -16,7 +34,7 @@ body {
     font-family: "JetBrains Mono", monospace;
     font-size: large;
 }
-::selection {
+&::selection {
     color: $grey;
 }
 a {
@@ -60,15 +78,4 @@ nav {
     display: table-cell;
     $animation-delay: (-0.2s, -0.4s, -0.6s, -0.8s, -1s, -1.2s -1.4s);
     @include animation-delay();
-}
-@keyframes wave {
-    0% {
-        transform: translateY(0px);
-    }
-    50% {
-        transform: translateY(7.5px);
-    }
-    100% {
-        transform: translateY(0px);
-    }
 }
