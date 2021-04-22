@@ -1,0 +1,9 @@
+
+vscode:
+  extensions:
+    - editorconfig.editorconfig
+    - github.vscode-pull-request-github
+    - eamodio.gitlens
+    - esbenp.prettier-vscode
+    - yandeu.five-server
+    - glenn2223.live-sass

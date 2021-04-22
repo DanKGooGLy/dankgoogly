@@ -1,8 +1,9 @@
 $black: #1e2127;
-$yellow: #d19a66;
 $blue: #61afef;
 $grey: #5c6370;
 $white: #abb2bf;
+$yellow: #d19a66;
+
 @font-face {
     font-family: "JetBrains Mono";
     font-style: normal;
@@ -10,6 +11,7 @@ $white: #abb2bf;
     font-display: auto;
     src: local("jb"), url("/src/fonts/jb.woff2") format("woff2");
 }
+
 @keyframes wave {
     0% {
         transform: translateY(0px);
@@ -21,6 +23,15 @@ $white: #abb2bf;
         transform: translateY(0px);
     }
 }
+
+@mixin animation-delay {
+    @for $i from 1 through 8 {
+        &:nth-child(#{$i}) {
+            animation-delay: #{$i * -0.2}s;
+        }
+    }
+}
+
 html {
     font-family: "JetBrains Mono", monospace;
     height: 100%;
@@ -28,24 +39,29 @@ html {
     padding: 0;
     width: 100%;
 }
+
 body {
     background: $black;
     color: $white;
     font-family: "JetBrains Mono", monospace;
     font-size: large;
 }
+
 ::selection {
     color: $grey;
 }
+
 a {
     color: $yellow;
 }
+
 h1,
 h3,
 p {
     margin: auto;
     max-width: 1000px;
 }
+
 nav {
     font-size: large;
     overflow: hidden;
@@ -58,20 +74,16 @@ nav {
         }
     }
 }
+
 #apage {
     display: none;
 }
+
 #title {
     padding-top: 10px;
     text-align: center;
 }
-@mixin animation-delay {
-    @for $i from 1 through 8 {
-        &:nth-child(#{$i}) {
-            animation-delay: #{$i * -0.2}s;
-        }
-    }
-}
+
 .wave span {
     animation: wave 2s infinite;
     color: $blue;
