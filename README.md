@@ -1,2 +1,1 @@
-<img align="center" src="https://github-readme-stats.vercel.app/api/?username=Vapourium&theme=transparent" />
-<img align="center" src="https://gpvc.arturio.dev/Vapourium">
+Most of my repositories are on my [Gitea](https://git.catvibers.me/vapour)
